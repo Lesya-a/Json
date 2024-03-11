@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		14AD3916BAD28850A9E480F0 /* Pods_Json.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24EE497AD73B7C7FE2C039B /* Pods_Json.framework */; };
+		F90286C82B9FA6DC00E0686C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286C72B9FA6DC00E0686C /* NetworkingManager.swift */; };
+		F90286CA2B9FA70700E0686C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286C92B9FA70700E0686C /* UIColor+.swift */; };
+		F90286CF2B9FA86A00E0686C /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286CE2B9FA86A00E0686C /* ToDoVC.swift */; };
+		F90286D12B9FA8B900E0686C /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286D02B9FA8B900E0686C /* UsersVC.swift */; };
 		F91C51162B9F953E00280119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51152B9F953E00280119 /* AppDelegate.swift */; };
 		F91C51182B9F953E00280119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51172B9F953E00280119 /* SceneDelegate.swift */; };
-		F91C511A2B9F953E00280119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51192B9F953E00280119 /* ViewController.swift */; };
+		F91C511A2B9F953E00280119 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51192B9F953E00280119 /* MainTabBarController.swift */; };
 		F91C511D2B9F953E00280119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91C511B2B9F953E00280119 /* Main.storyboard */; };
 		F91C511F2B9F954100280119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91C511E2B9F954100280119 /* Assets.xcassets */; };
 		F91C51222B9F954100280119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91C51202B9F954100280119 /* LaunchScreen.storyboard */; };
@@ -20,10 +24,14 @@
 		95FBCDADF973751E63B67287 /* Pods-Json.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Json.release.xcconfig"; path = "Target Support Files/Pods-Json/Pods-Json.release.xcconfig"; sourceTree = "<group>"; };
 		B4BC2B364AD9E67E71F0AE30 /* Pods-Json.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Json.debug.xcconfig"; path = "Target Support Files/Pods-Json/Pods-Json.debug.xcconfig"; sourceTree = "<group>"; };
 		D24EE497AD73B7C7FE2C039B /* Pods_Json.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Json.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90286C72B9FA6DC00E0686C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		F90286C92B9FA70700E0686C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		F90286CE2B9FA86A00E0686C /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
+		F90286D02B9FA8B900E0686C /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		F91C51122B9F953E00280119 /* Json.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Json.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91C51152B9F953E00280119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F91C51172B9F953E00280119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F91C51192B9F953E00280119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F91C51192B9F953E00280119 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F91C511C2B9F953E00280119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F91C511E2B9F954100280119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91C51212B9F954100280119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,8 +64,72 @@
 				B4BC2B364AD9E67E71F0AE30 /* Pods-Json.debug.xcconfig */,
 				95FBCDADF973751E63B67287 /* Pods-Json.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F90286C02B9FA5A300E0686C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F90286CB2B9FA80900E0686C /* TabBar */,
+				F90286CC2B9FA81600E0686C /* Users */,
+				F90286CD2B9FA82400E0686C /* ToDo */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F90286C12B9FA5BD00E0686C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F90286C92B9FA70700E0686C /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F90286C22B9FA5CB00E0686C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F90286C72B9FA6DC00E0686C /* NetworkingManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F90286C32B9FA60500E0686C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F90286C42B9FA61200E0686C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F91C51202B9F954100280119 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F90286CB2B9FA80900E0686C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F91C51192B9F953E00280119 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F90286CC2B9FA81600E0686C /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				F90286D02B9FA8B900E0686C /* UsersVC.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		F90286CD2B9FA82400E0686C /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				F90286CE2B9FA86A00E0686C /* ToDoVC.swift */,
+			);
+			path = ToDo;
 			sourceTree = "<group>";
 		};
 		F91C51092B9F953D00280119 = {
@@ -81,12 +153,15 @@
 		F91C51142B9F953E00280119 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				F90286C02B9FA5A300E0686C /* Controllers */,
+				F90286C12B9FA5BD00E0686C /* Extensions */,
+				F90286C22B9FA5CB00E0686C /* Manager */,
+				F90286C32B9FA60500E0686C /* Models */,
+				F90286C42B9FA61200E0686C /* Views */,
 				F91C51152B9F953E00280119 /* AppDelegate.swift */,
 				F91C51172B9F953E00280119 /* SceneDelegate.swift */,
-				F91C51192B9F953E00280119 /* ViewController.swift */,
 				F91C511B2B9F953E00280119 /* Main.storyboard */,
 				F91C511E2B9F954100280119 /* Assets.xcassets */,
-				F91C51202B9F954100280119 /* LaunchScreen.storyboard */,
 				F91C51232B9F954100280119 /* Info.plist */,
 			);
 			path = Json;
@@ -207,7 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91C511A2B9F953E00280119 /* ViewController.swift in Sources */,
+				F90286CA2B9FA70700E0686C /* UIColor+.swift in Sources */,
+				F91C511A2B9F953E00280119 /* MainTabBarController.swift in Sources */,
+				F90286CF2B9FA86A00E0686C /* ToDoVC.swift in Sources */,
+				F90286D12B9FA8B900E0686C /* UsersVC.swift in Sources */,
+				F90286C82B9FA6DC00E0686C /* NetworkingManager.swift in Sources */,
 				F91C51162B9F953E00280119 /* AppDelegate.swift in Sources */,
 				F91C51182B9F953E00280119 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,7 +351,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -335,7 +414,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
