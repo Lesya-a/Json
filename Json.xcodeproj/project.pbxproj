@@ -12,6 +12,7 @@
 		F90286CA2B9FA70700E0686C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286C92B9FA70700E0686C /* UIColor+.swift */; };
 		F90286CF2B9FA86A00E0686C /* ToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286CE2B9FA86A00E0686C /* ToDoVC.swift */; };
 		F90286D12B9FA8B900E0686C /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286D02B9FA8B900E0686C /* UsersVC.swift */; };
+		F90286D72B9FC9FA00E0686C /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90286D62B9FC9FA00E0686C /* UsersTableViewCell.swift */; };
 		F91C51162B9F953E00280119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51152B9F953E00280119 /* AppDelegate.swift */; };
 		F91C51182B9F953E00280119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51172B9F953E00280119 /* SceneDelegate.swift */; };
 		F91C511A2B9F953E00280119 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C51192B9F953E00280119 /* MainTabBarController.swift */; };
@@ -28,6 +29,7 @@
 		F90286C92B9FA70700E0686C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		F90286CE2B9FA86A00E0686C /* ToDoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoVC.swift; sourceTree = "<group>"; };
 		F90286D02B9FA8B900E0686C /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		F90286D62B9FC9FA00E0686C /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		F91C51122B9F953E00280119 /* Json.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Json.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91C51152B9F953E00280119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F91C51172B9F953E00280119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		F90286C42B9FA61200E0686C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F90286D52B9FC9C600E0686C /* Cells */,
 				F91C51202B9F954100280119 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -130,6 +133,14 @@
 				F90286CE2B9FA86A00E0686C /* ToDoVC.swift */,
 			);
 			path = ToDo;
+			sourceTree = "<group>";
+		};
+		F90286D52B9FC9C600E0686C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F90286D62B9FC9FA00E0686C /* UsersTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F91C51092B9F953D00280119 = {
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F90286CA2B9FA70700E0686C /* UIColor+.swift in Sources */,
+				F90286D72B9FC9FA00E0686C /* UsersTableViewCell.swift in Sources */,
 				F91C511A2B9F953E00280119 /* MainTabBarController.swift in Sources */,
 				F90286CF2B9FA86A00E0686C /* ToDoVC.swift in Sources */,
 				F90286D12B9FA8B900E0686C /* UsersVC.swift in Sources */,
