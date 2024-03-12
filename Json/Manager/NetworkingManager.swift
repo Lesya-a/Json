@@ -1,30 +1,23 @@
-import UIKit
+import Alamofire
 
-class NetworkingManager: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // MARK: - Outlets
-        // MARK: - Actions
-        // MARK: - Properties
-        // MARK: Public
-        // MARK: Private
-        // MARK: - Lifecycle
-        // MARK: - API
-        // MARK: - Setups
-        // MARK: - Helpers
+struct NetworkManager {
+    static let instance = NetworkManager()
+    
+    enum Constants {
+        static let baseURL = "https://jsonplaceholder.typicode.com"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    enum EndPoints {
+        static let users = "/users"
     }
-    */
-
+    
+    func getAllUsers(completion: @escaping (([Users]) -> Void)) {
+        AF.request(Constants.baseURL + EndPoints.users).responseDecodable(of: [Users].self) { response in
+            switch response.result {
+            case .success(let data): completion(data)
+            case .failure(let error): print(error)
+            }
+        }
+    }
+    private init() {}
 }
