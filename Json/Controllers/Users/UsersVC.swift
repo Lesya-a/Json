@@ -58,12 +58,20 @@ extension UsersVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell", for: indexPath) as? UsersTableViewCell {
-            cell.set(info[indexPath.row].name ?? "",
-                     info[indexPath.row].email ?? "")
+            cell.set(info[indexPath.row].name,
+                     info[indexPath.row].email)
             return cell
         }
         
         return UITableViewCell()
     }
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hello")
+        let usersInfoVC = UsersInfoVC(user: info[indexPath.row])
+        usersInfoVC.modalPresentationStyle = .formSheet
+        usersInfoVC.usersInfo = info[indexPath.row]
+        print(info[indexPath.row])
+        present(usersInfoVC, animated: true)
+        }
 }
